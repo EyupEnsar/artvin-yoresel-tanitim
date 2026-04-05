@@ -1,8 +1,24 @@
-import createMiddleware from 'next-intl/middleware'
-import { routing } from './i18n/routing'
+import { NextRequest, NextResponse } from 'next/server'
+import { verifyToken } from '@/lib/auth'
 
-export default createMiddleware(routing)
+export async function proxy(request: NextRequest) {
+  const { pathname } = request.nextUrl
+
+  if (pathname.startsWith('/admin')) {
+    if (pathname === '/admin/login') return NextResponse.next()
+    const token = request.cookies.get('admin_token')?.value
+    if (!token) return NextResponse.redirect(new URL('/admin/login', request.url))
+    try {
+      await verifyToken(token)
+      return NextResponse.next()
+    } catch {
+      return NextResponse.redirect(new URL('/admin/login', request.url))
+    }
+  }
+
+  return NextResponse.next()
+}
 
 export const config = {
-  matcher: ['/((?!studio|api|_next|_vercel|.*\\..*).*)'],
+  matcher: ['/((?!api|_next|_vercel|.*\\..*).*)'],
 }

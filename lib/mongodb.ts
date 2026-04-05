@@ -1,23 +1,18 @@
-import { MongoClient } from 'mongodb'
+import mongoose from 'mongoose'
 
-const uri = process.env.MONGODB_URI!
-let client: MongoClient
-let clientPromise: Promise<MongoClient>
+const MONGODB_URI = process.env.MONGODB_URI!
+
+if (!MONGODB_URI) throw new Error('MONGODB_URI tanımlanmamış')
 
 declare global {
   // eslint-disable-next-line no-var
-  var _mongoClientPromise: Promise<MongoClient> | undefined
+  var _mongooseConn: typeof mongoose | null
 }
 
-if (process.env.NODE_ENV === 'development') {
-  if (!global._mongoClientPromise) {
-    client = new MongoClient(uri)
-    global._mongoClientPromise = client.connect()
-  }
-  clientPromise = global._mongoClientPromise
-} else {
-  client = new MongoClient(uri)
-  clientPromise = client.connect()
+async function connectDB() {
+  if (global._mongooseConn) return global._mongooseConn
+  global._mongooseConn = await mongoose.connect(MONGODB_URI)
+  return global._mongooseConn
 }
 
-export default clientPromise
+export default connectDB

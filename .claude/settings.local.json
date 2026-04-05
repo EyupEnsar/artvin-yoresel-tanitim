@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(taskkill //F //IM node.exe)",
+      "Bash(mkdir -p /c/Users/eyup_/projects/artvin-yoresel-tanitim/app/api/food/\\\\[id\\\\])",
+      "Bash(mkdir -p /c/Users/eyup_/projects/artvin-yoresel-tanitim/app/api/places/\\\\[id\\\\])",
+      "Bash(mkdir -p /c/Users/eyup_/projects/artvin-yoresel-tanitim/app/api/events/\\\\[id\\\\])",
+      "Bash(mkdir -p /c/Users/eyup_/projects/artvin-yoresel-tanitim/app/api/accommodation/\\\\[id\\\\])",
+      "Bash(mkdir -p /c/Users/eyup_/projects/artvin-yoresel-tanitim/app/api/gallery/\\\\[id\\\\])",
+      "Bash(mkdir -p \"/c/Users/eyup_/projects/artvin-yoresel-tanitim/app/admin/food/[id]\")",
+      "Bash(mkdir -p \"/c/Users/eyup_/projects/artvin-yoresel-tanitim/app/admin/places/[id]\")",
+      "Bash(mkdir -p \"/c/Users/eyup_/projects/artvin-yoresel-tanitim/app/admin/events/[id]\")",
+      "Bash(mkdir -p \"/c/Users/eyup_/projects/artvin-yoresel-tanitim/app/admin/accommodation/[id]\")",
+      "Bash(mkdir -p \"/c/Users/eyup_/projects/artvin-yoresel-tanitim/app/admin/announcements/[id]\")",
+      "Bash(xargs sed:*)",
+      "Bash(curl -s http://localhost:3000/api/seed)",
+      "Bash(cp \"C:\\\\Users\\\\eyup_\\\\projects\\\\artvin-yoresel-tanitim\\\\app\\\\accommodation\\\\[slug]\\\\page.tsx\" \"C:\\\\Users\\\\eyup_\\\\projects\\\\artvin-yoresel-tanitim\\\\app\\\\\\(site\\)\\\\accommodation\\\\[slug]\\\\page.tsx\")",
+      "Bash(cp \"C:\\\\Users\\\\eyup_\\\\projects\\\\artvin-yoresel-tanitim\\\\app\\\\events\\\\[slug]\\\\page.tsx\" \"C:\\\\Users\\\\eyup_\\\\projects\\\\artvin-yoresel-tanitim\\\\app\\\\\\(site\\)\\\\events\\\\[slug]\\\\page.tsx\")",
+      "Bash(cp \"C:\\\\Users\\\\eyup_\\\\projects\\\\artvin-yoresel-tanitim\\\\app\\\\food\\\\[slug]\\\\page.tsx\" \"C:\\\\Users\\\\eyup_\\\\projects\\\\artvin-yoresel-tanitim\\\\app\\\\\\(site\\)\\\\food\\\\[slug]\\\\page.tsx\")",
+      "Bash(cp \"C:\\\\Users\\\\eyup_\\\\projects\\\\artvin-yoresel-tanitim\\\\app\\\\places\\\\[slug]\\\\page.tsx\" \"C:\\\\Users\\\\eyup_\\\\projects\\\\artvin-yoresel-tanitim\\\\app\\\\\\(site\\)\\\\places\\\\[slug]\\\\page.tsx\")",
+      "Bash(mkdir -p \"C:\\\\Users\\\\eyup_\\\\projects\\\\artvin-yoresel-tanitim\\\\app\\\\api\\\\members\\\\[id]\")",
+      "Bash(mkdir -p \"C:\\\\Users\\\\eyup_\\\\projects\\\\artvin-yoresel-tanitim\\\\app\\\\admin\\\\members\\\\[id]\")",
+      "Bash(grep:*)"
+    ]
+  }
+}
