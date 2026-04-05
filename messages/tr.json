@@ -1,0 +1,62 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "places": "Gezilecek Yerler",
+    "food": "Yerel Lezzetler",
+    "events": "Etkinlik & Duyurular",
+    "accommodation": "Konaklama",
+    "gallery": "Galeri"
+  },
+  "home": {
+    "hero_title": "Artvin'i Keşfet",
+    "hero_subtitle": "Karadeniz'in Yeşil İncisi",
+    "featured_places": "Öne Çıkan Yerler",
+    "latest_events": "Son Etkinlikler",
+    "explore_more": "Daha Fazla Keşfet"
+  },
+  "common": {
+    "read_more": "Devamını Oku",
+    "all": "Tümü",
+    "loading": "Yükleniyor...",
+    "no_content": "İçerik bulunamadı."
+  },
+  "places": {
+    "title": "Gezilecek Yerler",
+    "subtitle": "Artvin'in Eşsiz Güzellikleri",
+    "categories": {
+      "all": "Tümü",
+      "doga": "Doğa",
+      "tarih": "Tarih",
+      "selale": "Şelale",
+      "yayla": "Yayla",
+      "koy": "Köy",
+      "diger": "Diğer"
+    }
+  },
+  "food": {
+    "title": "Yerel Lezzetler",
+    "subtitle": "Artvin Mutfağından Seçmeler"
+  },
+  "events": {
+    "title": "Etkinlik & Duyurular",
+    "subtitle": "Güncel Haberler ve Etkinlikler"
+  },
+  "accommodation": {
+    "title": "Konaklama",
+    "subtitle": "Artvin'de Nerede Kalınır?",
+    "types": {
+      "otel": "Otel",
+      "pansiyon": "Pansiyon",
+      "kamp": "Kamp",
+      "bungalov": "Bungalov",
+      "diger": "Diğer"
+    }
+  },
+  "gallery": {
+    "title": "Fotoğraf Galerisi",
+    "subtitle": "Artvin'den Kareler"
+  },
+  "footer": {
+    "rights": "Tüm hakları saklıdır."
+  }
+}
